@@ -46,8 +46,8 @@
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
-   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp N8    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &trans    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE
+   &trans &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
+   &trans &kp UNDER &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &trans    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE
    &trans &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp SQT        &kp PSCRN &kp HOME &kp PG_DN &kp PG_UP &kp END   &mt RSHFT RET
                                  &trans      &trans       &kp RET        &mo 3       &trans
                         >;
