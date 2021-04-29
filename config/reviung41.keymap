@@ -30,53 +30,53 @@
 // |  TAB |  Q  |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P  |   BKSP    |
 // | CTRL |  A  |ALT(S)|SFT(D)|CTL(F)|  G  |   |  H  |CTL(J)|SFT(K)|ALT(L)|  ;  |    '      |
 // | SHFT |  Z  |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /  | SHFT(RET) |
-//                        | ALT | LWR | NAV(SPC) | RSE | ALT |
+//                         | FUNC | LWR |  SPACE  | RSE | FUNC |
                         bindings = <
-   &kp TAB   &kp Q &kp W      &kp E       &kp R       &kp T           &kp Y &kp U        &kp I       &kp O      &kp P    &kp BSPC
-   &kp ESC   &kp A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G           &kp H &hm RCTRL J  &hm RSHFT K &hm LALT L &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X      &kp C       &kp V       &kp B           &kp N &kp M        &kp COMMA   &kp DOT    &kp FSLH &mt RSHFT RET
-                                           &kp LALT  &mo 1 &lt 3 SPACE &mo 2  &kp LALT
+   &kp TAB   &kp Q &kp W      &kp E       &kp R       &kp T         &kp Y &kp U        &kp I       &kp O      &kp P    &kp BSPC
+   &kp ESC   &kp A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G         &kp H &hm RCTRL J  &hm RSHFT K &hm LALT L &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X      &kp C       &kp V       &kp B         &kp N &kp M        &kp COMMA   &kp DOT    &kp FSLH &mt RSHFT RET
+                                               &mo 3 &mo 1 &kp SPACE &mo 2 &mo 3
                         >;
                 };
 
                 lower_layer {
 // ----------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
+// |    |  _  |  +  |  {  |  }  | "|" |   |  ~  | LFT | DWN |  UP | RGT |     `     |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | PRSC| HOME| PGDN| PGUP| END | SHFT(RET) |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
    &kp DEL &kp EXCL  &kp AT      &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp DEL
-   &trans  &kp UNDER &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &trans    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE
-   &trans  &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp SQT        &kp PSCRN &kp HOME &kp PG_DN &kp PG_UP &kp END   &mt RSHFT RET
+   &trans  &kp UNDER &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp TILDE &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE
+   &trans  &kp ESC   &kp LGUI    &kp LALT &kp CLCK &kp SQT        &kp PSCRN &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
                                   &trans      &trans       &kp RET        &mo 4       &trans
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-// |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
+// ----------------------------------------------------------------------------------
+// |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |    DEL    |
+// |    |  -  |  =  |  [  |  ]  |  \  |   |  `  | LFT | DWN |  UP | RGT |     ~     |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | PRSC| HOME| PGDN| PGUP| END | SHFT(RET) |
 //                       |     | ADJ | BKSP |    |     |
                         bindings = <
-   &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
-   &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
-   &trans &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp SQT       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-                                &trans      &mo 4       &kp BSPC        &trans      &trans
+   &kp DEL &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7   &kp N8    &kp N9    &kp N0    &kp DEL
+   &trans  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH      &kp GRAVE &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp TILDE
+   &trans  &kp ESC   &kp LGUI  &kp RALT  &kp CLCK  &kp SQT       &kp PSCRN &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
+                                 &trans      &mo 4       &kp BSPC        &trans      &trans
                         >;
                 };
 
-                navig_layer {
+                funct_layer {
 // ----------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |     ~     |
-// |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(RET) |
+// |    |  _  |  +  |  {  |  }  | "|" |   | F1  | F2  | F3  | F4  | F5  | F6  |
+// |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
    &kp DEL &trans  &trans   &trans   &trans   &trans      &trans    &trans   &trans    &trans    &trans    &kp DEL
-   &trans  &trans  &trans   &trans   &trans   &trans      &trans    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp GRAVE
-   &trans  &kp ESC &kp LGUI &kp LALT &kp CLCK &kp SQT     &kp PSCRN &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans
+   &trans  &trans  &trans   &trans   &trans   &trans      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6
+   &trans  &kp ESC &kp LGUI &kp LALT &kp CLCK &kp SQT     &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
                                   &trans   &trans   &trans   &trans   &trans
                         >;
                 };
