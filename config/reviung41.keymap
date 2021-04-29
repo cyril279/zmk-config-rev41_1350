@@ -27,15 +27,15 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O  |  P  |   BKSP    |
-// | CTRL |  A  |  S  |SFT(D)|CTL(F)|  G  |   |  H  |CTL(J)|SFT(K)|  L  |  ;  |    '      |
-// | SHFT |  Z  |  X  |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .  |  /  | SHFT(RET) |
+// |  TAB |  Q  |  W   |  E   |  R   |  T  |   |  Y  |  U   |  I   |  O   |  P  |   BKSP    |
+// | CTRL |  A  |ALT(S)|SFT(D)|CTL(F)|  G  |   |  H  |CTL(J)|SFT(K)|ALT(L)|  ;  |    '      |
+// | SHFT |  Z  |  X   |  C   |  V   |  B  |   |  N  |  M   |  ,   |  .   |  /  | SHFT(RET) |
 //                        | ALT | LWR | NAV(SPC) | RSE | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC   &kp A &kp S &hm LSHFT D &hm LCTRL F &kp G   &kp H &hm RCTRL J  &hm RSHFT K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                        &kp LALT  &mo 1 &lt 3 SPACE &mo 2  &kp LALT
+   &kp TAB   &kp Q &kp W      &kp E       &kp R       &kp T           &kp Y &kp U        &kp I       &kp O      &kp P    &kp BSPC
+   &kp ESC   &kp A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G           &kp H &hm RCTRL J  &hm RSHFT K &hm LALT L &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X      &kp C       &kp V       &kp B           &kp N &kp M        &kp COMMA   &kp DOT    &kp FSLH &mt RSHFT RET
+                                           &kp LALT  &mo 1 &lt 3 SPACE &mo 2  &kp LALT
                         >;
                 };
 
