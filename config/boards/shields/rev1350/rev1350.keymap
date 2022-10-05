@@ -29,6 +29,45 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_tab {
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+        };
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <14 15>;
+            bindings = <&kp ESC>;
+        };
+        combo_lbspc {
+            timeout-ms = <70>;
+            key-positions = <26 27>;
+            bindings = <&kp BSPC>;
+        };
+        combo_ldel {
+            timeout-ms = <70>;
+            key-positions = <27 28>;
+            bindings = <&kp DEL>;
+        };
+        combo_enter {
+            timeout-ms = <40>;
+            key-positions = <20 21>;
+            bindings = <&kp ENTER>;
+        };
+        combo_rbspc {
+            timeout-ms = <70>;
+            key-positions = <31 32>;
+            bindings = <&kp BSPC>;
+        };
+        combo_rdel {
+            timeout-ms = <70>;
+            key-positions = <32 33>;
+            bindings = <&kp DEL>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
