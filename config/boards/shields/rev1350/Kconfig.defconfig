@@ -1,0 +1,9 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_REV1350
+
+config ZMK_KEYBOARD_NAME
+    default "rev1350"
+
+endif
