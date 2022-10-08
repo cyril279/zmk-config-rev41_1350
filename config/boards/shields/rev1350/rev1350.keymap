@@ -109,7 +109,7 @@
                 &kp DEL  &kp CLCK &kp N7   &kp N8   &kp N9   &trans         &trans    &kp LBKT  &kp EQUAL &kp RBKT  &trans    &kp DEL
                 &trans   &kp LGUI &kp N4   &kp N5   &kp N6   &kp N0         &trans    &kp LPAR  &kp MINUS &kp RPAR  &trans    &kp BSLH
                 &trans   &kp RET  &kp N1   &kp N2   &kp N3   &trans         &kp PSCRN &trans    &kp GRAVE &trans    &trans    &trans
-                                                  &trans  &mo ADJST &trans  &trans  &trans
+                                                  &mo ADJST &kp N0  &trans  &trans  &trans
             >;
         };
 
