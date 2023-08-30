@@ -6,4 +6,6 @@ if SHIELD_REV1350
 config ZMK_KEYBOARD_NAME
     default "rev1350"
 
+CONFIG_ZMK_BACKLIGHT=y
+
 endif
