@@ -10,8 +10,20 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,backlight = &backlight;
     };
 
+
+    {
+        backlight: pwmleds {
+            compatible = "pwm-leds";
+            label = "Backlight LEDs";
+            pwm_led_0 {
+                pwms = <&pwm0 13 10000 PWM_POLARITY_NORMAL>;
+                label = "Backlight LED 0";
+            };
+        };
+    };
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <6>;
@@ -56,13 +68,3 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(5,0) RC(5,1) RC(5,2) RC(5,3) 
     ch0-pin = <13>;
 };
 
-/ {
-    backlight: pwmleds {
-        compatible = "pwm-leds";
-        label = "Backlight LEDs";
-        pwm_led_0 {
-            pwms = <&pwm0 13 10000 PWM_POLARITY_NORMAL>;
-            label = "Backlight LED 0";
-        };
-    };
-};
