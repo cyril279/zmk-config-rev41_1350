@@ -6,8 +6,6 @@ if SHIELD_REV1350
 config ZMK_KEYBOARD_NAME
     default "rev1350"
 
-endif # SHIELD_REV1350
-
 if ZMK_BACKLIGHT
 
 config PWM
@@ -17,3 +15,5 @@ config LED_PWM
     default y
 
 endif # ZMK_BACKLIGHT
+
+endif # SHIELD_REV1350
